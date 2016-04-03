@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 18, 2016, 10:13:59 PM
+    Author     : Fariz
+*/
+
+.button {
+
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #14645f;
+
+}
+.closeButton{
+    -fx-background-image: url(../../resources/buttonIcons/close3.png);
+    -fx-background-size: 20 20;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;  
+}
+.button:hover {
+    -fx-cursor: hand;
+    -fx-background-color:#ffffff;
+    -fx-text-fill: #009289; 
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0 , 0 , 5 );
+
+}
+
+.button:active {
+
+    -fx-background-color: #a3a3a3;
+    -fx-position:relative;
+    -fx-top:1px;
+}
+.button:pressed {
+    -fx-background-color:#c4c7c7;
+    -fx-animated: true;
+    -fx-top:1px;
+}
+.buttonSave{
+    -fx-background-image: url("../../resources/buttonIcons/save.png"); 
+    -fx-background-size: 20 20;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 3px 3px;   
+}
+.label{
+    -fx-text-fill: white;
+}
+.choice-box{
+    -fx-background-color: #14645f;
+ 
+}
+.choice-box .label{  
+    -fx-text-fill: black;
+}
+.choice-box:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#ffffff;
+    -fx-text-fill: #009289; 
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0 , 0 , 5 )
+}
+.combo-box {
+    -fx-background-color: #14645f;
+}
+.combo-box .arrow-button{
+    -fx-background-color: #14645f;
+}
+.date-picker {
+    -fx-background-color: #14645f;
+}
+.date-picker .arrow-button{
+    -fx-background-color: #14645f;
+}
+
+.mainBackground2{
+    -fx-background-image: url("../../resources/ZenBG1.png");
+    -fx-background-repeat: repeat-x, repeat;
+    -fx-background-insets: 12;  
+    -fx-background-radius: 10;  
+    -fx-effect: dropshadow(three-pass-box, grey, 20, 0, 0, 0); 
+     
+}

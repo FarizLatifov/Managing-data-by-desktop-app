@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" prefHeight="368.0" prefWidth="724.0" stylesheets="@SquadMenuCSS.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rmd.main.FXMLSquadMenuController">
+   <children>
+      <HBox minHeight="-Infinity" prefHeight="368.0" prefWidth="700.0">
+         <children>
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="204.0" HBox.hgrow="NEVER">
+               <children>
+                  <Text fill="#14645f" layoutX="11.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECTED PLAYER" textAlignment="CENTER" wrappingWidth="182.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextFlow fx:id="textFlowInfo" layoutX="11.0" layoutY="60.0" prefHeight="237.0" prefWidth="181.0" styleClass="textFlow">
+                     <children>
+                        <TextArea fx:id="textAreaWideInformation" prefHeight="237.0" prefWidth="181.0" styleClass="textArea">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></TextArea>
+                     </children></TextFlow>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="368.0" prefWidth="474.0">
+               <children>
+                  <ToolBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="31.0" prefWidth="491.0" styleClass="toolBar">
+                     <items>
+                        <Button id="refreshButton" fx:id="buttonRefresh" mnemonicParsing="false" onAction="#handleRefreshButton" prefHeight="14.0" prefWidth="56.0" styleClass="buttonRefresh" text="Refresh" />
+                        <Button fx:id="buttonAll" mnemonicParsing="false" onAction="#populateTableAll" text="All" />
+                        <Button fx:id="buttonForward" mnemonicParsing="false" onAction="#populateTableForward" text="Forward" />
+                        <Button fx:id="buttonMidfielder" mnemonicParsing="false" onAction="#populateTableMidfielder" text="Midfielder" />
+                        <Button fx:id="buttonDefense" mnemonicParsing="false" onAction="#populateTableDefense" text="Defense" />
+                        <Button fx:id="buttonGoalKeeper" mnemonicParsing="false" onAction="#populateTableGK" text="Goalkeeper" />
+                     </items>
+                  </ToolBar>
+                  <TableView fx:id="tableAll" editable="true" layoutY="34.0" prefHeight="263.0" prefWidth="491.0" styleClass="tableView" stylesheets="@TableCSS.css">
+                     <columns>
+                        <TableColumn fx:id="colPlayerName" prefWidth="110.0" text="Name" />
+                        <TableColumn fx:id="colPosition" prefWidth="98.0" text="Position" />
+                        <TableColumn fx:id="colCountry" prefWidth="99.0" text="Country" />
+                        <TableColumn fx:id="colShirtNumber" prefWidth="84.0" text="Shirt Number" />
+                        <TableColumn fx:id="colBirthDate" prefWidth="99.0" text="Birth Date" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Button fx:id="buttonAdd" layoutX="19.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleAddNewPlayerButton" prefHeight="25.0" prefWidth="110.0" styleClass="addButton" text="     Add Player" />
+                  <Button fx:id="buttonDelete" disable="true" layoutX="190.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="25.0" prefWidth="110.0" styleClass="deleteButton" text="      Delete Player" />
+                  <Button fx:id="buttonEdit" disable="true" layoutX="363.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleEditButton" prefHeight="25.0" prefWidth="110.0" styleClass="editButton" text="    Edit Player" />
+                  <Label fx:id="labelMessage" layoutX="19.0" layoutY="304.0" prefHeight="19.0" prefWidth="454.0" textFill="RED" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

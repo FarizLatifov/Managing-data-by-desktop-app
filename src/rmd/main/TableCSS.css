@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 18, 2016, 2:01:08 AM
+    Author     : Fariz
+*/
+.tableView{
+        -fx-background-color: transparent;
+
+}
+.tableView .column-header-background{
+    -fx-background-color: #009289;
+}
+
+.tableView .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.tableView .column-header {
+    -fx-background-color: transparent;
+}
+
+.tableView .table-cell{
+       -fx-text-fill: #00005e;
+}
+
+.tableRow-cell{
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}

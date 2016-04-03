@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="385.0" prefWidth="387.0" styleClass="mainBackground2" stylesheets="@AddPlayerCSS.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rmd.main.FXMLEditPlayerController">
+   <children>
+      <TextField fx:id="textFieldFullName" layoutX="187.0" layoutY="80.0" />
+      <Label layoutX="46.0" layoutY="83.0" prefHeight="17.0" prefWidth="65.0" text="Name" />
+      <Label fx:id="labelPosition" layoutX="46.0" layoutY="131.0" prefHeight="17.0" prefWidth="65.0" text="Position" />
+      <Label fx:id="labelCountry" layoutX="46.0" layoutY="180.0" prefHeight="17.0" prefWidth="65.0" text="Country" />
+      <Label fx:id="labelShirtNumber" layoutX="46.0" layoutY="227.0" prefHeight="17.0" prefWidth="82.0" text="Shirt number" />
+      <Label layoutX="46.0" layoutY="274.0" prefHeight="17.0" prefWidth="65.0" text="Birth date" />
+      <Button fx:id="buttonSave" layoutX="46.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="25.0" prefWidth="95.0" styleClass="buttonSave" text="Save" />
+      <Label fx:id="labelMessage" layoutX="44.0" layoutY="305.0" prefHeight="25.0" prefWidth="358.0" textFill="#f20707" />
+      <Text fill="AQUA" layoutX="87.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDIT PLAYER" textAlignment="CENTER" wrappingWidth="246.0">
+         <font>
+            <Font name="EccentricStd" size="33.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="choiceBoxPosition" layoutX="187.0" layoutY="130.0" prefWidth="150.0" />
+      <DatePicker fx:id="datePickerBirthDate" layoutX="187.0" layoutY="273.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button fx:id="buttonReset" layoutX="260.0" layoutY="344.0" mnemonicParsing="false" onAction="#resetAllFields" prefHeight="25.0" prefWidth="95.0" text="Reset" />
+      <Label fx:id="labelShirtNumberMessage" layoutX="187.0" layoutY="249.0" prefHeight="17.0" prefWidth="194.0" textFill="#fc0606" />
+      <ComboBox fx:id="comboBoxCountry" editable="true" layoutX="187.0" layoutY="180.0" prefWidth="150.0" />
+      <Label layoutX="286.0" layoutY="227.0" text="(1 to 99)" />
+      <ComboBox fx:id="comboBoxShirtNumber" editable="true" layoutX="187.0" layoutY="223.0" prefHeight="25.0" prefWidth="95.0" />
+      <Button fx:id="closeWindowButton" layoutX="380.0" layoutY="2.0" mnemonicParsing="false" onAction="#handleCloseWindowButton" prefHeight="25.0" prefWidth="20.0" styleClass="closeButton" />
+   </children>
+</AnchorPane>

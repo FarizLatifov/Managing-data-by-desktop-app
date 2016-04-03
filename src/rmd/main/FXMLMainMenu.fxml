@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="590.0" minWidth="-Infinity" prefHeight="579.0" prefWidth="726.0" styleClass="windowPane" stylesheets="@SquadMenuCSS.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rmd.main.FXMLMainMenuController">
+   <children>
+      <BorderPane layoutX="105.0" layoutY="53.0" minHeight="500.0" prefHeight="514.0" prefWidth="726.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane fx:id="headerPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="133.0" prefWidth="726.0" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="125.0" prefWidth="726.0" styleClass="headerPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="buttonSquad" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" onAction="#loadSquadPage" prefHeight="25.0" prefWidth="102.0" styleClass="makeButton" text="       Make Team" />
+                        <Button layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="25.0" prefWidth="102.0" styleClass="homeButton" text="   Home" />
+                        <Button layoutX="14.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleAboutUsButton" prefHeight="25.0" prefWidth="102.0" styleClass="aboutUsButton" text="      About Us" />
+                        <Label fx:id="labelHeader" alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="23.0" maxWidth="1.7976931348623157E308" prefHeight="79.0" prefWidth="597.0" text="Team maker" textAlignment="CENTER" textFill="#00ffffd1" AnchorPane.leftAnchor="129.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="23.0">
+                           <font>
+                              <Font name="EccentricStd" size="69.0" />
+                           </font></Label>
+                        <Button layoutX="701.0" layoutY="2.0" mnemonicParsing="false" onAction="#handleCloseWindowButton" prefHeight="25.0" prefWidth="23.0" styleClass="closeButton" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </AnchorPane>
+         </top>
+         <center>
+            <StackPane fx:id="contentStackPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="724.0" styleClass="mainBackground" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="15.0" prefHeight="15.0" prefWidth="726.0" styleClass="footerPane" BorderPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <Label fx:id="labelFootNote" alignment="BOTTOM_CENTER" layoutX="221.0" layoutY="9.0" prefHeight="26.0" prefWidth="726.0" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
