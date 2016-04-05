@@ -18,8 +18,8 @@ import java.util.logging.Logger;
 public class DBConnection {
         
               static String URL = "jdbc:mysql://localhost:3306/realmadrid?allowMultiQueries=true&zeroDateTimeBehavior=convertToNull";
-              static String USERNAME = "root";
-              static String PASSWORD = "mysqlserver";
+              static String USERNAME = "my username";
+              static String PASSWORD = "my password";
               static Connection connection=null;
  
     public static Connection getDBConnection(){
